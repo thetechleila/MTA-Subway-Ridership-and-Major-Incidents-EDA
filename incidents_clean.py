@@ -10,7 +10,10 @@ print(df_raw.head(15))
 df_raw.columns = ["col_" + str(i) for i in range(len(df_raw.columns))] 
 
 # Rename the specific column
-df_raw.rename(columns={"col_8": "Date_Occurred", "col_12": "Incident_Type", "col_13": "Incident_Count", "col_11": "Wday_Wnd","col_9": "Division"} , inplace=True)
+df_raw.rename(columns={"col_8": "Date_Occurred", "col_12": "Incident_Type", "col_13": "Incident_Count", "col_11": "Wday_Wnd","col_9": "Division","col_10": "TrainLine"} , inplace=True)
+
+# Drop the first 8 rows
+df_raw = df_raw.iloc[8:]
 
 # Display column names to confirm
 print(df_raw.columns)
@@ -19,3 +22,6 @@ print(df_raw.columns)
 df_raw.to_csv("/Users/sa3/Portfolio-Project/incidents_clean.csv", index=False)
 
 print("File saved successfully!") 
+
+print(df_raw.columns)
+df_raw.head()
