@@ -10,7 +10,7 @@ print(df_raw.head(15))
 df_raw.columns = ["col_" + str(i) for i in range(len(df_raw.columns))] 
 
 # Rename the specific column
-df_raw.rename(columns={"col_8": "Date_Occurred", "col_12": "Incident_Type", "col_13": "Incident_Count", "col_11": "Wday_Wnd"} , inplace=True)
+df_raw.rename(columns={"col_8": "Date_Occurred", "col_12": "Incident_Type", "col_13": "Incident_Count", "col_11": "Wday_Wnd","col_9": "Division"} , inplace=True)
 
 # Display column names to confirm
 print(df_raw.columns)
