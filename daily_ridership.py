@@ -15,4 +15,4 @@ ridership_data = page.json()
 df = pd.DataFrame(ridership_data)
 
 #Create CSV file from DataFrame
-df.to_csv("daily_ridership_5yrs.csv", index=False)
+df.to_csv("daily_ridership.csv", index=False)
