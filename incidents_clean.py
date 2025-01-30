@@ -12,8 +12,8 @@ df_raw.columns = ["col_" + str(i) for i in range(len(df_raw.columns))]
 # Rename the specific column
 df_raw.rename(columns={"col_8": "Date_Occurred", "col_12": "Incident_Type", "col_13": "Incident_Count", "col_11": "Wday_Wnd","col_9": "Division","col_10": "TrainLine"} , inplace=True)
 
-# Drop the first 8 rows
-df_raw = df_raw.iloc[8:]
+columns_to_drop = ["col_0", "col_1","col_2","col_3","col_4","col_5","col_6","col_7"]  
+df_raw.drop(columns=columns_to_drop, inplace=True)
 
 # Display column names to confirm
 print(df_raw.columns)
