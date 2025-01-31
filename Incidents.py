@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 import requests
-
+import datetime as dt
 
 url = "https://data.ny.gov/api/views/j6d2-s8m2/rows.json?accessType=DOWNLOAD"
 
@@ -31,7 +31,8 @@ df_raw.rename(columns={"col_8": "date", "col_12": "incident_type", "col_13": "in
 columns_to_drop = ["col_0", "col_1","col_2","col_3","col_4","col_5","col_6","col_7"]  
 df_raw.drop(columns=columns_to_drop, inplace=True)
 
-
+df_raw['date'] = pd.to_datetime(df_raw['date'], errors="coerce")
+df_raw['date'] = df_raw['date'].dt.date
 
 # Display column names to confirm
 print(df_raw.columns)
