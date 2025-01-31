@@ -1,4 +1,5 @@
-Date_Occurred,Division,TrainLine,Wday_Wnd,Incident_Type,Incident_Count
+date,division,train_line,wday_wnd,incident_type,incident_count
+8,9,10,11,12,13
 2020-01-01T00:00:00,A DIVISION,1,1,Other,1
 2020-01-01T00:00:00,A DIVISION,2,1,Persons on Trackbed/Police/Medical,1
 2020-01-01T00:00:00,A DIVISION,2,2,Other,1
