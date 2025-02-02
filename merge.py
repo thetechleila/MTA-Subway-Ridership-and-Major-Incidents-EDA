@@ -1,8 +1,7 @@
 import pandas as pd
 
-df1 = pd.read_csv("daily_ridership.csv")
-df2 = pd.read_csv("incidents.csv")
+df1 = pd.read_csv("/Users/sa24/Downloads/Portfolio-Project-main/Portfolio-Project/daily_ridership.csv")
+df2 = pd.read_csv("/Users/sa24/Downloads/Portfolio-Project-main/Portfolio-Project/incidents.csv")
 
-merge_df = pd.merge(df1,df2, left_index=True, right_index=True)
-
-merge_df.to_csv("merged_file.csv", index=False)
+merged_df = df1.merge(df2, on="date", how="inner")
+merged_df.to_csv("merged_file.csv", index=False)
