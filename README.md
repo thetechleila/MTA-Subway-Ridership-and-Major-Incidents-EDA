@@ -31,7 +31,7 @@ ___
 ___
 ## Execution
 
-**Phase I: Web-Scraping**
+##### **Phase I: Web-Scraping**
 
 * The *MTA Daily Ridership Data: 2020-2025* and the *MTA Subway Major Incidents: Beginning 2020* 
 datasets were scraped from the source's public API using:
@@ -41,7 +41,7 @@ datasets were scraped from the source's public API using:
 
 (*Please note that both datasets are still actively recording and storing data about MTA Subway Ridership & Major Incidents as of April 3, 2025.*)
 
-**Phase II: Data Cleaning and Wrangling**
+##### **Phase II: Data Cleaning and Wrangling**
 
 * Scraped data from *MTA Daily Ridership Data: 2020-2025* and *MTA Subway Major Incidents: Beginning 2020* were converted into CSV files.
     * Each step of this process is contained in the *transform* folder.
@@ -50,7 +50,8 @@ datasets were scraped from the source's public API using:
 
 * The _MTA Daily Ridership Data: 2020-2025_ dataset and the _MTA Subway Major Incidents: Beginning 20202_ dataset were then either combined and filtered into 2 separate CSV files (combined_df.csv and merged_file.csv) in order to more easily analyze the large amount of data. 
 
-**Phase III: Exploratory Data Analyses**
+##### **Phase III: Exploratory Data Analyses**
+
 Each member of the team conducted their own individual EDA in a Jupyter Notebook. Each analysis features:
 
 * Visualizations created with matplotlib and seaborn
