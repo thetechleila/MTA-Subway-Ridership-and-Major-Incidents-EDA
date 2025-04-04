@@ -3,7 +3,7 @@
 ___
 
 ## Project Description 
-Utilizing the _MTA Daily Ridership Data: 2020-2025_ dataset and the _MTA Subway Major Incidents: Beginning 20202_ dataset from NY Open Data, four independent exploratory data analyses were conducted to generate relevant hypotheses and identify possible hidden patterns when measuring any changes in MTA Subway Ridership for 2020-2024 when taking major incidents into consideration.
+Utilizing the _MTA Daily Ridership Data: 2020-2025_ dataset and the _MTA Subway Major Incidents: Beginning 2020 dataset from NY Open Data, four independent exploratory data analyses were conducted to generate relevant hypotheses and identify possible hidden patterns when measuring any changes in MTA Subway Ridership for 2020-2024 when taking major incidents into consideration.
 
 ___
 
