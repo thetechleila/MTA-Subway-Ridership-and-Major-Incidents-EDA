@@ -32,6 +32,7 @@ ___
 ## Execution
 
 **Phase I: Web-Scraping**
+
 * The *MTA Daily Ridership Data: 2020-2025* and the *MTA Subway Major Incidents: Beginning 2020* 
 datasets were scraped from the source's public API using:
     * BeautifulSoup
@@ -41,16 +42,25 @@ datasets were scraped from the source's public API using:
 (*Please note that both datasets are still actively recording and storing data about MTA Subway Ridership & Major Incidents as of April 3, 2025.*)
 
 **Phase II: Data Cleaning and Wrangling**
+
 * Scraped data from *MTA Daily Ridership Data: 2020-2025* and *MTA Subway Major Incidents: Beginning 2020* were converted into CSV files.
-* The *MTA Daily Ridership Data: 2020-2025* dataset was split into 2 separate CSV files due to its immense size
+    * Each step of this process is contained in the *transform* folder.
 
+* The *MTA Daily Ridership Data: 2020-2025* dataset was split into 2 separate CSV files (daily_ridership.csv and daily_rider2024.csv) due to its immense size
 
-The _MTA Daily Ridership Data: 2020-2025_ dataset and the _MTA Subway Major Incidents: Beginning 20202_ dataset were either combined or filtered into 5 separate CSV files in order to more easily analyze the large amount of data. The data was pulled from both APIs with code detailed in three .py files = incidents.py, daily_ridership.py, and merge.py.
+* The _MTA Daily Ridership Data: 2020-2025_ dataset and the _MTA Subway Major Incidents: Beginning 20202_ dataset were then either combined and filtered into 2 separate CSV files (combined_df.csv and merged_file.csv) in order to more easily analyze the large amount of data. 
 
+**Phase III: Exploratory Data Analyses**
+Each member of the team conducted their own individual EDA in a Jupyter Notebook. Each analysis features:
 
+* Visualizations created with matplotlib and seaborn
+* Insights into the explored phenomena
+* Possible suggestions for improvement
+
+The 4 separate analyses are available in the **notebooks** folder. 
 ___
 
 ## Repository Story
 
 * This repository is a clone of the first exploratory data analysis I've ever conducted at The Knowledge House Technology Fellowship during late January 2025-early February 2025 with a team of 3 other fellows.
-* It contains updates, spelling and grammatical fixes, more contextual information, and an "images" folder containing all visualizations
+* It contains updates, links to source data, spelling and grammatical fixes, more contextual information, and an "images" folder containing all visualizations
